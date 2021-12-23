@@ -7,6 +7,6 @@
 • 길벗출판사 웹 사이트</br>
 http://www.gilbut.co.kr/</br>
 • 길벗출판사 깃허브</br>
-https://github.com/gilbutITbook/080288</br>
+https://github.com/gilbutITbook/080282</br>
 
 예제 파일에는 장별 실습에 필요한 명령어가 텍스트 파일로 담겨 있습니다. 필요한 경우에만 복사하여 실습할 때 사용하세요. 가능하면 책을 보며 직접 입력하여 실습하는 것을 권장합니다.
