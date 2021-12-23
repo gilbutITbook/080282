@@ -1,0 +1,1077 @@
+2장
+date
+
+echo Hello
+
+abcxyz
+
+echo $SHELL
+
+sh
+
+bash
+
+logout
+
+exit
+exit
+
+--------------------------
+3장
+
+echo Hello
+
+ping 192.168.2.67
+
+echo Hello
+
+cho Hello
+
+--------------------------
+4장
+
+pwd
+
+cd /usr
+
+pwd
+
+ls
+
+cd lib
+
+pwd
+
+pwd
+cd
+pwd
+
+cd ~
+
+ls /
+
+ls /bin/cp
+ls /bin/nocommand
+
+ls / /usr
+
+ls ba??
+
+ls -l
+
+cd ~
+ls -a
+
+cd /
+ls -F
+
+ls -a -F /
+
+ls -w 30
+
+ls --quote-name
+
+--------------------------
+5장
+
+cd
+mkdir work
+
+ls -F
+
+mkdir work
+
+cd work
+
+mkdir report/2021/05
+
+mkdir -p report/2021/05
+
+ls
+touch newfile
+ls
+
+ls
+rm newfile
+ls
+
+touch file1 file2 file3
+ls
+rm file1 file2 file3
+ls
+
+mkdir dir1
+rm dir1
+
+touch dir1/file1 dir1/file2 dir1/file3
+ls dir1
+rm -r dir1
+ls dir1
+
+touch newfile
+cat newfile
+
+cat /etc/hostname
+
+cat /etc/crontab
+
+cat /etc/hostname /etc/crontab
+
+cat -n /etc/crontab
+
+cat
+
+cat
+Hello
+
+cat
+Hello
+
+less /etc/bash.bashrc
+
+touch file1
+cp file1 file2
+ls -F
+
+cp file1 dir1
+ls dir1
+
+touch file3
+mkdir dir2
+cp file1 file2 file3 dir2
+ls dir2
+
+ls
+cp file1 file2
+
+ls
+cp -i file1 file2
+
+cp dir2 dir3
+
+ls -F
+ls dir2
+cp -r dir2 dir3
+ls dir3
+
+mkdir mvtest
+cd mvtest
+touch file1
+
+mv file1 file2
+ls
+
+mkdir dir1
+touch file1 
+mv file1 dir1 
+ls dir1
+
+touch file1 file2 file3
+$mv file1 file2 file3 dir1 
+ls dir1
+
+mkdir dir2
+ls dir1
+mv dir1 dir2
+ls dir2/dir1
+
+cp /etc/crontab file1
+ls
+ln file1 file2
+ls
+
+cat file2
+
+rm file1
+ls
+cat
+
+rm file2
+ls
+
+cp /etc/crontab file1
+ln -s file1 file2
+
+ls -l
+
+cat file2
+
+rm file2
+ls
+
+ln -s file1 file2
+ls -l
+rm file1
+ls -l
+cat file2
+
+--------------------------
+6장
+
+mkdir -p dir1/doc
+touch file-1.txt dir1/doc/file-1.txt 
+find . -name file-1.txt -print
+
+find -name *.txt -print
+
+find . -type d -print
+
+locate --version
+
+sudo apt-get install mlocate
+
+yum install mlocate
+
+sudo updatedb
+
+locate bash
+
+locate '*.sed'
+
+locate -i notes
+
+locate -b python
+
+locate docs document
+
+locate -A bash doc
+
+cat --help
+
+man cat
+
+man man
+
+man -k copy
+
+man -wa crontab
+
+ls -lF /bin/cat
+
+echo $PATH
+
+which cat
+
+which -a lsmod
+
+LANG=ko_KR.UTF-8 cat --help
+
+LANG=C cat --help
+
+--------------------------
+7장
+
+cat /etc/crontab
+
+vim --version
+
+apt-get install vim
+
+yum install vim
+
+vim
+
+vim newfile1.txt
+
+ls
+
+cp /etc/crontab .
+vim crontab
+
+vimtutor
+
+--------------------------
+8장
+
+ls -F /
+
+alias ls='ls -F'
+
+ls /
+
+type ls
+type cp
+
+type ls
+
+/bin/ls
+
+command ls
+
+\ls
+
+set -o ignoreeof
+
+shopt -s cdspell
+ls -F
+cd mediaa
+pwd
+
+var1='test variable'
+
+echo $var1
+
+var = 'test variable'
+
+echo $PATH
+
+cmd1
+
+echo $LANG
+
+locale -a
+
+cd $HOME/report 
+pwd
+
+type set
+type cp
+
+LANG=ko_KR.UTF-8
+cat --help
+
+printenv
+
+LESS='--no-init'
+export LESS
+
+cp .bashrc .bashrc.org
+
+source ~/.bashrc
+
+--------------------------
+9장
+
+touch testfile1
+ls -l testfile1
+
+groups
+
+ls -l /etc/crontab
+
+/etc/crontab
+
+ls -ld dir1
+
+ls -ld dir2 
+ls dir2
+
+ls -l dir1/readonly.txt
+rm dir1/readonly.txt
+
+ls -ld dir3
+cd dir3
+
+chmod u+w file.txt
+
+chmod g-w file.txt
+
+chmod go=r file.txt
+
+chmod 755 file.txt
+ls -l file.txt
+
+su
+
+exit
+
+su -
+
+cat /etc/shadow
+
+sudo cat /etc/shadow
+
+su -
+cat /etc/sudoers
+
+sudo visudo
+
+--------------------------
+10장
+
+ps
+
+ps xf
+
+ps ax
+
+man bash
+
+vim ~/.bashrc
+
+jobs
+
+jobs -l
+
+fg %1
+
+vim file1.txt
+ls /
+fg
+
+cp file1 file2
+
+bg %1
+
+jobs
+
+cp file1 file2 &
+
+type jobs fg bg
+
+cp file1 file2
+
+kill -l
+
+--------------------------
+11장
+
+cat
+
+cat < /etc/crontab
+
+ls -l / > list.txt 
+cat list.txt
+
+ls /xxxxx
+
+ls /xxxxx > list.txt
+
+ls /xxxxx 2> error.txt
+cat error.txt
+
+ls /xxxxx > list.txt 2> error.txt
+
+ls /xxxxx > result.txt 2>&1
+
+echo 123 > number.txt
+cat number.txt
+echo 456 > number.txt
+cat number.txt
+
+echo 789 >> number.txt
+cat number.txt
+
+set -o noclobber
+ls -l > list.txt
+
+ls -l /dev/null
+
+cat < /dev/null
+
+cat /etc/crontab > /dev/null
+
+ls / /xxxxx > /dev/null
+
+ls / /xxxxx 2> /dev/null
+
+ls / /xxxxx > /dev/null 2>&1
+
+ls -l / > temp_list.txt
+less temp_list.txt
+
+ls -l / | less
+
+history
+
+history | less
+
+ls -l /etc | cat -n | less
+
+ls -l / /xxxxx 2>&1 | less
+
+head /etc/crontab
+
+history | head
+
+du -b /bin/*
+
+du -b /bin/* | sort -n
+
+du -b /bin/* | sort -n | tac
+
+du -b /bin/* | sort -n | tac | head -n 5
+
+--------------------------
+12장
+
+wc -l /etc/passwd
+wc -w /etc/passwd
+wc -c /etc/passwd
+
+ls / | wc -l
+
+ls / | wc -l -
+
+sort file1
+
+ps x
+
+ps x | sort -k 5
+
+sort number.txt
+
+sort -n number.txt
+
+sort -r file1
+
+ls -l /bin/ | sort -rn -k 5
+
+uniq file2
+
+uniq file3
+
+sort file3 | uniq
+
+sort -u file3
+
+sort file2 | uniq -c
+
+sort file2 | uniq -c | sort -rn
+
+sort file2 | uniq -c | sort -n
+
+cat /etc/passwd
+
+cut -d : -f 7 /etc/passwd
+
+cut -d : -f 1,6,7 /etc/passwd
+
+cat /etc/passwd | tr : ,
+
+cat /etc/passwd | tr abc ABC
+
+cat /etc/passwd | tr a-z A-Z
+
+tr : , /etc/passwd
+
+cat /etc/passwd | tr -d "\n"
+
+tail /etc/passwd
+
+tail -n 1 /etc/passwd
+
+head -n 1 /etc/passwd
+
+touch output.log
+tail -f output.log
+
+echo Hello >> output.log
+
+tail -f output.log
+
+--------------------------
+13장
+
+grep bash /etc/passwd
+
+grep -n PS1 /etc/bash.bashrc
+
+grep system /etc/bash.bashrc 
+grep -i system /etc/bash.bashrc
+
+grep -v bash /etc/passwd
+
+ls /etc | grep cron
+
+ls /etc | grep '^cron'
+
+grep 't.st' example.txt
+
+grep 't..st' example.txt
+
+grep '.org' example.txt
+
+grep '\.org' example.txt
+
+grep 't[ef]st' example.txt
+
+grep 'mail[1-4]' example.txt
+
+grep 'mail[^13]' example.txt
+
+grep 'net' example.txt
+
+grep '^net' example.txt
+
+grep 'net$' example.txt
+
+grep 'Be*r' drink.txt
+
+grep '^B[ea]*r$' drink.txt
+
+grep 'Be+r' drink.txt
+grep -E 'Be+r' drink.txt
+
+grep 'Be\+r' drink.txt
+
+grep -E 'Be+r' drink.txt
+
+grep -E 'Wine ?Wine' drink.txt
+
+grep -E 'Be{1,2}r' drink.txt
+
+grep -E 'Be{2}r' drink.txt
+
+grep -E 'Be{4,}r' drink.txt
+
+grep -E '(Wine){2,}' drink.txt
+
+grep -E 'My (Vodka|Wine)' drink.txt
+
+--------------------------
+14장
+
+sed 1d drink2.txt
+
+sed 2,5d drink2.txt
+
+sed '3,$d' drink2.txt
+
+sed d drink2.txt
+
+sed /^B/d drink2.txt
+
+sed 1p drink2.txt
+
+sed -n 1p drink2.txt
+
+sed 's/Beer/Whisky/' drink2.txt
+
+sed 's/Beer/Whisky/g' drink2.txt
+
+sed 's/B.*r/Whisky/g' drink2.txt
+
+sed 's/!//g' drink2.txt
+
+sed -n 's/!//gp' drink2.txt
+
+sed -r 's/Be+r/Whisky/' drink2.txt
+
+sed 's/My \(.*\)/--\1--/' drink2.txt
+
+sed '1,3s/Beer/Whisky/g' drink2.txt
+
+sed 's/Beer/\/Beer\//g' drink2.txt
+
+sed 's!Beer!/Beer/!g' drink2.txt
+
+ls -l /usr/bin
+
+ls -l /usr/bin | awk '{print $5,$9}'
+
+ls -l /usr/bin | awk '{print $5 $9}'
+
+ls -l /usr/bin | awk '{print $(NF-1),$NF}'
+
+ls -l /usr/bin | awk '$9 ~ /^cp/ {print $5,$9}'
+
+ls -l /usr/bin | awk '/^l/ {print $5,$9}'
+
+awk -F, '{print $1,$2,$3}' score.csv
+
+awk -F, '{print $NF}' score.csv
+
+awk -F, '{sum += $NF} END{print sum}' score.csv
+
+awk -F, '{sum += $NF} END{print "Average:",sum/NR}' score.csv
+
+cat average.awk
+awk -F, -f average.awk score.csv
+
+--------------------------
+15장
+
+du -h ~ | tail -n 1
+
+vim homesize.sh
+
+chmod +x homesize.sh
+
+./homesize.sh
+
+source ./homesize-noshebang.sh
+
+. ./homesize-noshebang.sh
+
+alias lsalf='ls -alF'
+
+source ./test1.sh 
+./test1.sh
+
+lsalf
+source ./alias_set.sh 
+lsalf
+
+lsalf
+./alias_set.sh 
+lsalf
+
+homesize.sh
+
+echo $PATH
+
+mkdir ~/bin
+mv homesize.sh ~/bin
+
+source ~/.profile
+
+homesize.sh
+
+ls homesize.sh
+source homesize.sh
+
+shopt -u sourcepath
+source homesize.sh
+
+--------------------------
+16장
+
+./rootls.sh
+
+./rootdir.sh
+
+echo \
+
+echo \
+"Hello \
+World"
+
+./var.sh
+
+./sep_var.sh
+
+./sep_var.sh
+
+./quote.sh
+
+date '+%Y-%m-%d'
+
+echo "Today is $(date '+%Y-%m-%d')."
+
+echo "Today is `date '+%Y-%m-%d'`."
+
+./parameters.sh aaa bbb ccc
+
+ls
+./parameters.sh *
+
+./parameters. sh aaa bbb ccc
+
+./args.sh aaa bbb ccc "Hello World"
+
+./if-bin.sh bin
+./if-bin.sh Hello
+./if-bin.sh bin
+
+type [
+
+ls 
+echo $?
+
+./showstatus.sh
+
+[ "$1" = "bin" ] 
+echo $?
+
+./if-int.sh 4.2 5.6
+
+[ -f file.txt ] && cat file.txt
+
+[ -f file.txt ] || touch file.txt
+
+./if-and.sh 4
+./if-and.sh 2
+
+./if-or.sh home
+./if-or.sh usr
+./if-or.sh etc
+
+./summary.sh /etc/passwd
+
+./summary.sh /home
+
+./for.sh
+
+seq 1 5
+
+./for-touch.sh
+ls -l
+
+./parameters.sh readme.txt 38 "Hello World"
+
+./summary.sh /home /etc/passwd
+
+i=10 
+echo $(( i + 1)) 
+echo $(( i / 2)) 
+echo $(( i * 2)) 
+echo $(( i ** 2))
+
+./func-test.sh
+
+./func_ parameters.sh
+
+--------------------------
+17장
+
+file /usr/bin/* | grep 'shell script'
+
+./globalvar.sh
+
+./locallvar.sh
+
+./tree.sh /home
+
+filepath=/home/ldk/scripts/diary.sh
+echo "${filepath##*/}"
+
+./tree.sh ~
+
+ls -l ~/text
+
+./tree.sh ~/text
+
+./tree.sh ~/text
+
+echo -n "$IFS" | od -a
+
+ls
+
+ls -l
+
+ls > filelist.txt
+cat filelist.txt
+
+find . -type f -name '*.txt'
+
+find . -type f -name '*.txt' | xargs ls -l
+
+find . -type f -name '*.txt' | xargs ls -l
+
+grep ldk list.txt
+
+grep ldk ./doc/list.txt ./doc/memo.txt
+
+find . -type f | xargs grep ldk
+
+./findgrep.sh ldk
+
+grep -n ldk ./doc/*.txt
+
+grep -H ldk list.txt
+
+./findgrep.sh ldk . '*.txt'
+
+basename "/home/ldk/bin/findgrep.sh"
+basename "./findgrep.sh"
+
+--------------------------
+18장
+
+mkdir dir1
+touch dir1/file-{1..5}.txt
+
+ls dir1
+
+echo {a..e}.txt
+
+echo sample.{txt,log,dat}
+
+tar cf dir1.tar dir1
+
+tar tf dir1.tar
+
+rm -rf dir1 
+tar xf dir1.tar 
+ls dir1
+
+tar cvf dir1.tar dir1
+
+tar tvf dir1.tar
+
+ps aux > ps.txt
+ls -l
+
+gzip ps.txt
+ls -l
+
+gzip -d ps.txt.gz
+ls -l
+
+gzip -c ps.txt > ps_test.txt.gz
+ls
+
+tar czf dir1.tar.gz dir1
+
+tar xzf dir1.tar.gz
+
+tar cf - dir1 | gzip -c > dir1.tar.gz
+
+gzip -d -c dir1.tar.gz | tar xf -
+
+bzip2 ps.txt
+ls -l
+
+bzip2 -d ps.txt.bz2
+
+bzip2 -c ps.txt > ps_test.txt.bz2
+
+tar cfj dir1.tar.bz2 dir1
+
+tar cJf dir1.tar.xz dir1
+
+sudo apt-get install zip unzip
+
+zip -r dir1.zip dir1
+
+zipinfo dir1.zip
+
+unzip dir1.zip
+
+zip -rq dir1.zip dir1
+
+unzip -q dir1.zip
+
+zip -er dir1.zip dir1
+
+unzip dir1.zip
+
+--------------------------
+19장
+
+git --version
+
+yum install git-core
+
+sudo apt-get install git-core
+
+git config --global user.name 'ldk'
+git config --global user.email 'ldk@example.com'
+
+git config --global color.ui auto
+
+cat ~/.gitconfig
+
+mkdir -p ~/git/findgrep
+
+cd ~/git/findgrep
+git init
+
+ls -a
+
+touch findgrep-19.sh
+chmod 755 findgrep-19.sh
+vim findgrep-19.sh
+
+git add findgrep-19.sh
+
+git commit -m 'findgrep-19.sh 신규 등록'
+
+git status
+
+git diff
+
+git add findgrep-19.sh
+
+git commit
+
+git commit
+
+git log
+
+git log -p
+
+git diff 137be164eb4464dbb1f6792dae06ba9276bf327f
+
+git diff 137be16
+
+git diff
+
+git add findgrep-19.sh
+git diff
+
+git diff --cached
+
+git diff HEAD
+
+git add -u
+
+git add -A
+
+git branch
+
+git branch feature-name
+
+git branch
+
+git checkout feature-name
+
+git branch
+
+git checkout master
+
+git merge feature-name
+
+git branch -d feature-name
+
+mkdir -p /home/ldk/share/findgrep.git
+cd /home/ldk/share/findgrep.git
+git --bare init
+
+cd ~/git/findgrep
+
+git push /home/ldk/share/findgrep.git master:master
+
+mkdir -p /home/ldk/work
+cd /home/ldk/work
+git clone /home/ldk/share/findgrep.git
+
+ls /home/ldk/work
+ls -a /home/ldk/work/findgrep
+
+git push /home/ldk/share/findgrep.git master:master
+
+git push /home/ldk/share/findgrep.git master
+
+git remote add origin /home/ldk/share/findgrep.git
+
+git remote -v
+
+git push origin master
+
+man git
+
+man git-log
+
+git help
+
+git help log
+
+--------------------------
+20장
+
+yum install httpd
+
+yum install httpd.x86_64
+
+yum erase httpd-tools
+
+yum search netcat
+
+yum search all netcat
+
+yum info httpd
+
+sudo apt-get install aptitude
+
+sudo apt-get remove aptitude-common
+
+apt-cache search netcat
+
+apt-cache search --names-only netcat
+
+apt-cache show aptitude
+
+apt-cache search --full netcat
+
